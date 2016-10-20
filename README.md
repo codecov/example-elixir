@@ -5,6 +5,10 @@
 
 This repository serves as an **example** on how to use [Codecov Global][4] for Elixir.
 
+# Mix.exs
+
+Add [excoveralls](https://hex.pm/packages/excoveralls) to your mix.exs deps.
+
 # Travis CI
 
 Add to your `.travis.yml` file.
