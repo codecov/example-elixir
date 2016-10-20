@@ -26,6 +26,9 @@ after_success:
   - bash <(curl -s https://codecov.io/bash)
 ```
 
+See the [Travis CI documentation](https://docs.travis-ci.com/user/languages/elixir/) for more information.
+
+
 View source and learn more about [Codecov Global Uploader][4]
 
 Need help? Contact support https://github.com/codecov/support
