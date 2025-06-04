@@ -36,7 +36,7 @@ defmodule Example.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:excoveralls, "~> 0.5.7", only: :test},
+      {:excoveralls, "~> 0.18", only: :test},
     ]
   end
 end
