@@ -5,12 +5,12 @@ defmodule Example.Mixfile do
     [
       app: :example,
       version: "0.1.0",
-      elixir: "~> 1.3",
+      elixir: "~> 1.11",
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
-      deps: deps,
+      deps: deps(),
       preferred_cli_env: [
-        "coveralls": :test,
+        coveralls: :test,
         "coveralls.html": :test,
         "coveralls.json": :test,
       ],
@@ -22,7 +22,7 @@ defmodule Example.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger]]
+    [extra_applications: [:logger]]
   end
 
   # Dependencies can be Hex packages:
@@ -36,7 +36,7 @@ defmodule Example.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:excoveralls, "~> 0.5.7", only: :test},
+      {:excoveralls, "~> 0.18", only: :test},
     ]
   end
 end
